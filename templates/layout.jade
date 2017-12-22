@@ -1,0 +1,44 @@
+extends ./_base
+
+block header
+  header
+    nav
+      .nav-item-container
+        .nav-item.nav-item-1
+          a(href="#") 首页
+        div.nav-item.nav-item-2.active-item
+          a(href="#") 新闻
+        div.nav-item.nav-item-3
+          a(href="#") 比赛
+        div.nav-item.nav-item-4
+          a(href="#") 视频
+        div.nav-item.nav-item-5
+          a(href="#") 球队
+      div.nav-bg
+      
+  //- 不懂为什么要空一格
+  block content
+
+block footer
+  footer
+    .content
+      img.logo(src="../res/_asset/logo-footer.png", alt="")
+      nav
+        a.nav-item(href="#") 首页
+        a.nav-item(href="#") 新闻
+        a.nav-item(href="#") 比赛
+        a.nav-item(href="#") 视频
+        a.nav-item(href="#") 球队
+      .line
+      .qr-title 欢迎关注 <br> 法甲官方账号 <br> 获取一手动态
+      .qr-container
+        .qr-item
+          img.qr-pic(src="../res/_asset/wx-qr.png", alt="")
+          span.icon-wx.qr-pic-title 法甲微信
+        .qr-item
+          img.qr-pic(src="../res/_asset/wb-qr.png", alt="")
+          span.icon-wb.qr-pic-title 法甲微博
+        .qr-item
+          img.qr-pic(src="../res/_asset/yk-qr.png", alt="")
+          span.icon-yk.qr-pic-title 优酷频道
+  .right-copy 隐私声明&nbsp;&nbsp;|&nbsp;&nbsp;使用的通用条款与条件&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2017&nbsp;Ligue&nbsp;1&nbsp;Conforama&nbsp;&nbsp;Powere

@@ -1,0 +1,53 @@
+extends ./layout.jade
+
+block style
+  link(rel="stylesheet" href="../res/css/home.css")
+block content
+  section
+    .section-wrapper
+      .home
+        .block-table
+          .left-cell
+            .main-pic
+              img(src="http://iph.href.lu/650x293", alt="")
+              .mask
+                span 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+            .main-items
+              .the-item
+                span 标题标题标题标题标题标题标题标题标题标题标题标题
+              .the-item
+                span 标题标题标题标题标题标题标题标题标题标题标题标题
+              .the-item
+                span 标题标题标题标题标题标题标题标题标题标题标题标题
+              .the-item.active
+                span 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+          .right-cell
+            .home-ranking.table.column
+              .tr.tr-header
+                .th.f-th.column-title 积分榜
+                .th 轮次
+                .th 胜
+                .th 平
+                .th 负
+                .th 积分
+              - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              each item in items
+                .tr
+                  .th.f-th
+                    span.rank-num #{item}
+                    img.logo(src="http://iph.href.lu/30x30", alt="")
+                    span 巴黎圣日耳曼
+                  .th 12
+                  .th 12
+                  .th 12
+                  .th 12
+                  .th 12
+            a(href="#")
+              .see-more-ranking 点击查看更多
+        .home-schedule.column
+          .tr-header 
+            .column-title 对阵信息
+            .schedule-time-container
+          .schedule-list
+            
+            
