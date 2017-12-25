@@ -4,7 +4,19 @@ var gulpWebserver = require('gulp-webserver');
 var gulpPlumber = require('gulp-plumber');
 var gulpJade = require('gulp-jade');
 var gulpData = require('gulp-data');
+var cssnext = require('cssnext')
+var precss = require('precss')
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
 var path = require('path');
+
+var processors = [
+  autoprefixer({
+      browsers: ["IE > 8", "Opera > 11", "Firefox > 14", "safari > 5", "Chrome > 30"]
+  }),
+  cssnext,
+  precss
+]
 
 gulp.task('webserver', function () {
   gulp.src('./')
@@ -21,6 +33,7 @@ gulp.task('scss', function () {
     .pipe(gulpSass({ // 編譯 Scss
       outputStyle: 'expanded'
     }))
+    .pipe(postcss(processors))
     .pipe(gulp.dest('res/css')); // 指定編譯後的 css 檔案目錄
 });
 
