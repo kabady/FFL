@@ -48,6 +48,80 @@ block content
           .tr-header 
             .column-title 对阵信息
             .schedule-time-container
+              .prev-btn
+              .select-view
+                select.schedule-trun-select(name="schedule-trun-select")
+                  option(value="") 第一轮
+                  option(value="") 第二轮
+                i.icon-select
+              .next-btn
           .schedule-list
+            - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            each item in items
+              .schedule-home-item
+                .the-header 比赛结束 08-26
+                .the-item
+                  div
+                    div.img-container
+                      img(src="http://iph.href.lu/69x69", alt="")
+                    span 巴黎圣日耳曼
+                  div 
+                    span.score 2-2
+                  div
+                    div.img-container
+                      img(src="http://iph.href.lu/69x69", alt="")
+                    span 巴黎圣日耳曼
+        .home-news.column
+          .tr-header 
+            .column-title 新闻
+            .more
+              a(href="#") 查看更多
+          .news-content
+            .left-news
+              a(href="#") 
+                .pic
+                  img(src="http://iph.href.lu/650x293", alt="")
+                p.main-news-title(titel="标题标题标题标题标题标题标题标题标题标题") 标题标题标题标题标题标题标题标题标题标题
+                p.main-news.-content 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+              a.see-detail(href="#")  查看详情 >
+            .right-news 
+              .home-news-list
+                - var items = [1, 2, 3, 4, 5]
+                each item in items
+                  .home-news-item
+                    p.the-title(title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    .time 09.01
+        .home-video.column
+          .tr-header 
+            .column-title 视频
+            .more
+              a(href="#") 查看更多
+          .home-video-list
+            - var items = [1, 2, 3, 4]
+            each item in items
+              .home-video-item
+                .pic
+                  img(src="http://iph.href.lu/650x293", alt="")
+                  a(href="#")
+                    i.icon-videoplay
+                p.the-title 标题标题标题标题标题标题标题标题标题
+          
+             
+
             
-            
+block script
+  script.
+    $(function(){
+      homeScheduleSelect();
+      function homeScheduleSelect(){
+        $('.home .home-schedule .schedule-time-container .prev-btn').on('click', function(){
+          console.log('prev');
+        })
+        $('.home .home-schedule .schedule-time-container .next-btn').on('click', function(){
+          console.log('next');
+        })
+      }
+    })
+    
+  
+    
