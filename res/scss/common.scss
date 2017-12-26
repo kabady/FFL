@@ -4,15 +4,28 @@ body{
 header{
   display: block;
   background: url(../_asset/header-bg.jpg) top center no-repeat;
-  height: 574px;
+  height: 474px;
   overflow: hidden;
-  margin-bottom: 444px - 574px;
+  margin-bottom: 344px - 474px;
   position: relative;
   z-index: 2;
+  .french-league-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    width: 171px;
+    height: 118px;
+    img{
+      position: absolute;
+      top: 0;
+      left: -75px;
+    }
+  }
   nav{
     display: block;
     width: 1000px;
-    margin: 358px auto 0;
+    margin: 258px auto 0;
     position: relative;
     
     .nav-item-container{

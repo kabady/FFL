@@ -1,0 +1,44 @@
+.team-page .team-list {
+  margin: 40px 30px;
+  font-size: 0;
+}
+
+.team-page .team-list .team-item {
+  width: 25%;
+  height: 120px;
+  line-height: 120px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.team-page .team-list .team-item:hover {
+  background: #e6e6e6;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+.team-page .team-list .team-item .pic {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.team-page .team-list .team-item .pic img {
+  width: 86px;
+  height: 86px;
+  margin-top: 17px;
+  display: block;
+}
+
+.team-page .team-list .team-item .team-name {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 120px;
+  font-size: 18px;
+  color: #000;
+}

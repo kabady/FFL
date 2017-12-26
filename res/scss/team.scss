@@ -1,0 +1,37 @@
+.team-page{
+  .team-list{
+    margin: 40px 30px;
+    font-size: 0;
+    .team-item{
+      width: 25%;
+      height: 120px;
+      line-height: 120px;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      &:hover{
+        background: #e6e6e6;
+        transition: all .5s;
+      }
+      .pic{
+        display: inline-block;
+        vertical-align: top;
+        img{
+          width: 86px;
+          height: 86px;
+          margin-top: 120px * .5 - 86px * .5;
+          display: block;
+        }
+      }
+      .team-name{
+        display: inline-block;
+        vertical-align: top;
+        line-height: 120px;
+        font-size: 18px;
+        color: #000;
+      }
+    }
+  }
+}

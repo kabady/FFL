@@ -1,4 +1,12 @@
-.home{
+header{
+  background: url(../_asset/home-header-bg.jpg) top center no-repeat;
+  height: 574px;
+  margin-bottom: 444px - 574px;
+  nav{
+    margin: 358px auto 0;
+  }
+}
+.home-page{
   .block-table{
     font-size: 0;
     .left-cell, .right-cell{
