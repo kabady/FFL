@@ -1,0 +1,63 @@
+extends ./layout.jade
+
+block style
+  link(rel="stylesheet" href="../res/css/ranking.css")
+
+block content
+  section
+    .section-wrapper
+      .ranking-page
+        .ranking-header
+          a(href="/html/schedule.html") 赛程
+          a.cur-page(href="/html/ranking.html") 积分榜
+        .team-ranking
+          .c-table
+            .c-row.c-header
+              .c-cell.ranking-num 排名
+              .c-cell 球队
+              .c-cell 胜&nbsp;平&nbsp;负
+              .c-cell 进球
+              .c-cell 失球
+              .c-cell 净胜球
+              .c-cell 积分
+            - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+            each item in items
+              .c-row(class="ranking-num-#{item}")
+                .c-cell.ranking-num #{item}
+                .c-cell 巴黎圣日耳曼
+                .c-cell 1&nbsp;/&nbsp;2&nbsp;/&nbsp;3
+                .c-cell 1
+                .c-cell 1
+                .c-cell 1
+                .c-cell 1
+        .goals-assists
+          .goals-ranking
+            h3 进球
+            .c-table
+              .c-row.c-header
+                .c-cell.ranking-num 排名
+                .c-cell 球员
+                .c-cell 球队
+                .c-cell 进球
+              - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+              each item in items
+                .c-row(class="ranking-num-#{item}")
+                  .c-cell.ranking-num #{item}
+                  .c-cell 巴黎圣日耳曼
+                  .c-cell 巴黎圣日耳曼
+                  .c-cell 100
+          .assists-ranking
+            h3 助攻
+            .c-table
+              .c-row.c-header
+                .c-cell.ranking-num 排名
+                .c-cell 球员
+                .c-cell 球队
+                .c-cell 助攻
+              - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+              each item in items
+                .c-row(class="ranking-num-#{item}")
+                  .c-cell.ranking-num #{item}
+                  .c-cell 巴黎圣日耳曼
+                  .c-cell 巴黎圣日耳曼
+                  .c-cell 100

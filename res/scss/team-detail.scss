@@ -1,3 +1,465 @@
 .team-detail-page{
-  
+  .content-nav{
+    margin: 0 30px;
+    font-size: 12px;
+    a{
+      color: rgba($color: #000000, $alpha: .5);
+      text-align: center;
+      text-decoration: none;
+    }
+    .team-name{
+      color: #022140;
+    }
+  }
+  .detail-header{
+    margin: 40px 30px 0;
+    background: #e6e6e6;
+    padding-right: 400px;
+    padding-left: 174px;
+    height: 180px;
+    position: relative;
+    
+    .team-logo{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 174px;
+      height: 180px;
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -43px;
+        margin-left: -43px;
+      }
+    }
+    .home-stadium{
+      width: 400px;
+      height: 180px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .team-info{
+      width: 100%;
+      padding-top: 15px;
+      .team-name-zh{
+        color: #000;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      .team-name-en{
+        color: #000;
+        font-size: 12px;
+      }
+      font-size: 0;
+      .stadium, .establish, .coach, .ranking{
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding-left: 40px;
+        height: 30px;
+        box-sizing: border-box;
+        background: no-repeat left center;
+        color: #000;
+        .name-zh{
+          font-size: 14px;
+        }
+        .name-en{
+          font-size: 12px;
+        }
+        .ranking-no{
+          font-size: 30px;
+          color: #022140;
+          line-height: 30px;
+          padding-left: 20px;
+        }
+      }
+      .stadium{
+        background-image: url(../_asset/stadium.png);
+      }
+      .establish{
+        background-image: url(../_asset/establish.png);
+        .establish-time{
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+      .coach{
+        background-image: url(../_asset/coach.png);
+      }
+      .ranking{
+        background-image: url(../_asset/ranking.png);
+      }
+    }
+  }
+  .team-detail-schedule{
+    margin: 20px 30px 0;
+    min-height: 20px;
+    overflow: hidden;
+    .team-detail-schedule-container{
+      margin-right: -23px;
+      .schedule-swiper-ctrl{
+        margin-top: 20px;
+        position: relative;
+        height: 20px;
+        .next-ctrl, .prev-ctrl{
+          position: absolute;
+          top: 0;
+          width: 460px;
+          height: 20px;
+          background: #d9d9d9;
+          &:before, &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -5px;
+            margin-left: -2px;
+            border: 5px solid transparent;
+          }
+        }
+        .prev-ctrl{
+          left: 0;
+          &:before, &:after{
+            border-left: 0;
+            border-right-color: #022140;
+          }
+          &:after{
+            margin-left: 0;
+            border-right-color: #d9d9d9;
+          }
+        }
+        .next-ctrl{
+          right: 0;
+          &:before, &:after{
+            border-right: 0;
+            border-left-color: #022140;
+          }
+          &:after{
+            margin-left: -4px;
+            border-left-color: #d9d9d9;
+          }
+        }
+      }
+      .swiper-container{
+        width: 100%;
+        white-space: nowrap;
+        font-size: 0;
+      }
+      .schedule-item{
+        vertical-align: top;
+        display: inline-block;
+        width: 298px;
+        padding-right: 23px;
+        .the-header{
+          height: 40px;
+          background: #e4e4e4;
+          font-size: 14px;
+          line-height: 40px;
+          color: #000;
+          text-align: center;
+        }
+        .the-item{
+          background: #fff;
+          width: 100%;
+          display: table;
+          padding: 10px 0;
+          
+          > div{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            .score{
+              font-size: 22px;
+              margin-top: -14px;
+            }
+            .img-container{
+              display: block;
+              width: 69px;
+              height: 69px;
+              margin: 0 auto;
+              img{
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            > span{
+              display: block;
+              font-size: 12px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .team-relative-news{
+    margin: 10px 30px 0;
+    .relative-news-swiper-ctrl{
+      margin-top: 20px;
+      position: relative;
+      height: 20px;
+      .next-ctrl, .prev-ctrl{
+        position: absolute;
+        top: 0;
+        width: 460px;
+        height: 20px;
+        background: #d9d9d9;
+        &:before, &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -5px;
+          margin-left: -2px;
+          border: 5px solid transparent;
+        }
+      }
+      .prev-ctrl{
+        left: 0;
+        &:before, &:after{
+          border-left: 0;
+          border-right-color: #022140;
+        }
+        &:after{
+          margin-left: 0;
+          border-right-color: #d9d9d9;
+        }
+      }
+      .next-ctrl{
+        right: 0;
+        &:before, &:after{
+          border-right: 0;
+          border-left-color: #022140;
+        }
+        &:after{
+          margin-left: -4px;
+          border-left-color: #d9d9d9;
+        }
+      }
+    }
+    .news-container{
+      font-size: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    h3{
+      margin: 0;
+      font-size: 22px;
+      color: #022140;
+      line-height: 1.8;
+      font-weight: normal;
+    }
+    .swiper-slide{
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .news-item{
+      height: 135px;
+      position: relative;
+      font-size: 0;
+      white-space: normal;
+      .pic{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+      .news-info{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 25px;
+        width: 530px;
+        max-height: 100%;
+        h6{
+          font-size: 16px;
+          line-height: 2;
+          font-weight: normal;
+          color: #000;
+          margin: 0;
+          overflow: hidden;
+          max-height: 2em;
+        }
+        p{
+          font-size: 12px;
+          margin: 15px 0 0;
+          font-size: 12px;
+          color: rgba($color: #000000, $alpha: .5);
+          line-height: 1.8;
+          height: 1.8em * 3;
+          overflow: hidden;
+        }
+        .tags{
+          margin-top: 5px;
+          font-size: 12px;
+          color: #022140;
+          line-height: 1.8;
+          span{
+            display: inline-block;
+            vertical-align: top;
+          }
+          span + span{
+            padding-left: 10px;
+          }
+        }
+      }
+      .news-right{
+        display: inline-block;
+        vertical-align: top;
+        width: 85px;
+        text-align: right;
+        max-height: 100%;
+        .see-news{
+          display: block;
+          font-size: 12px;
+          width: 100%;
+          height: 100px;
+          line-height: 100px;
+          color: #022140;
+          text-decoration: none;
+        }
+        .time{
+          color: #9a9a9a;
+          font-size: 12px;
+          line-height: 3;
+        }
+      }
+    }
+    .news-item + .news-item{
+      border-top: 1px dotted rgba($color: #000000, $alpha: .5);
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+  }
+  .team-relative-video{
+    margin: 10px 30px 0;
+    .relative-video-swiper-ctrl{
+      margin-top: 20px;
+      position: relative;
+      height: 20px;
+      .next-ctrl, .prev-ctrl{
+        position: absolute;
+        top: 0;
+        width: 460px;
+        height: 20px;
+        background: #d9d9d9;
+        &:before, &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -5px;
+          margin-left: -2px;
+          border: 5px solid transparent;
+        }
+      }
+      .prev-ctrl{
+        left: 0;
+        &:before, &:after{
+          border-left: 0;
+          border-right-color: #022140;
+        }
+        &:after{
+          margin-left: 0;
+          border-right-color: #d9d9d9;
+        }
+      }
+      .next-ctrl{
+        right: 0;
+        &:before, &:after{
+          border-right: 0;
+          border-left-color: #022140;
+        }
+        &:after{
+          margin-left: -4px;
+          border-left-color: #d9d9d9;
+        }
+      }
+    }
+    .video-container{
+      margin-right: -20px;
+      font-size: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    h3{
+      margin: 0;
+      font-size: 22px;
+      color: #022140;
+      line-height: 1.8;
+      font-weight: normal;
+    }
+    .swiper-slide{
+      width: 300px;
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .video-item{
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      .pic{
+        width: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        position: relative;
+        .icon-videoplay{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 62px;
+          height: 32px;
+          border-radius: 32px;
+          background: rgba($color: #000000, $alpha: .7);
+          margin-top: -16px;
+          margin-left: -31px;
+
+          &:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 10px solid #fff;
+            border-right: 0;
+            margin-left: -5px;
+            margin-top: -7px;
+            border-radius: 2px;
+          }
+        }
+      }
+      .the-title{
+        margin-top: .5em;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 2;
+        color: #000;
+        text-align: center;
+        height: 24px;
+        overflow: hidden;
+      }
+    }
+  }
 }

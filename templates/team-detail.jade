@@ -6,4 +6,135 @@ block style
 block content
   section
     .section-wrapper
-      .team-page-detail
+      .team-detail-page
+        .content-nav
+          a(href="/res/home.html") 首页 
+          span &nbsp;>&nbsp;
+          a(href="/res/team.html") 球队
+          span &nbsp;>&nbsp;
+          span.team-name 巴黎圣日耳曼
+        .detail-header
+          .team-logo
+            img(src="http://iph.href.lu/87x87", alt="球队logo, 这里需要高清大图")
+          .home-stadium
+            img(src="http://iph.href.lu/400x180", alt="主场场地")
+          .team-info
+            .team-name-zh 巴黎圣日耳曼
+            .team-name-en Paris Saint-Germain
+            .stadium
+              .name-zh 球场中文名
+              .name-en 球场英文名
+            .establish
+              .establish-time 1920-11-20
+            .coach
+              .name-zh 球场中文名
+              .name-en 球场英文名
+            .ranking
+              .ranking-no 1
+        .team-detail-schedule
+          .team-detail-schedule-container
+            .swiper-container
+              .swiper-wrapper
+                - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+                each item in items
+                  .schedule-item.swiper-slide
+                    .the-header 比赛结束 08-26
+                    .the-item
+                      div
+                        div.img-container
+                          img(src="http://iph.href.lu/69x69", alt="")
+                        span 巴黎圣日耳曼
+                      div 
+                        span.score #{item}-#{item}
+                      div
+                        div.img-container
+                          img(src="http://iph.href.lu/69x69", alt="")
+                        span 巴黎圣日耳曼
+            .schedule-swiper-ctrl
+              .prev-ctrl
+              .next-ctrl
+        .team-relative-news
+          h3 相关新闻
+          .news-container.swiper-container
+            .news-wrapper.swiper-wrapper
+              - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+              each item in items
+                .swiper-slide
+                  - var iitems = [1, 2, 3]
+                  each iitem in iitems
+                    .news-item
+                      .pic
+                        img(src="http://iph.href.lu/650x293", alt="")
+                      .news-info
+                        h6(title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题") #{item}-#{iitem}标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                        p 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+                        .tags
+                          span 【比赛战报】
+                          span 【比赛战报】
+                          span 【比赛战报】
+                          span 【比赛战报】
+                      .news-right
+                        a.see-news(href="/html/news-detail.html") 查看详情&nbsp;>
+                        .time 2018.09.20
+          .relative-news-swiper-ctrl
+            .prev-ctrl
+            .next-ctrl
+        .team-relative-video
+          h3 相关视频
+          .video-container
+            .swiper-container
+              .swiper-wrapper
+                - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+                each item in items
+                  .swiper-slide
+                    .video-item
+                      .pic
+                        img(src="http://iph.href.lu/238x135", alt="")
+                        a(href="#")
+                          i.icon-videoplay
+                      p.the-title #{item}标题标题标题标题标题标题标题标题标题
+          .relative-video-swiper-ctrl
+            .prev-ctrl
+            .next-ctrl
+
+
+        
+
+block script
+  script.
+    $(function(){
+      scheduleSwiperInit();
+      relativeNewsInit();
+      relativeVideoInit();
+      function scheduleSwiperInit(){
+        try{
+          var a = webpackModule.swiper('.team-detail-schedule-container .swiper-container', {
+            prevButton: '.team-detail-schedule-container .schedule-swiper-ctrl .prev-ctrl',
+            nextButton: '.team-detail-schedule-container .schedule-swiper-ctrl .next-ctrl',
+            onInit: function(b){
+              setTimeout(function(){
+                a.go(13, false)
+              }, 1000)
+            }
+          })
+          console.log(a)
+        }catch(e){
+          console.error('scheduleSwiperInit appear error')
+        }
+      }
+
+      function relativeNewsInit(){
+        webpackModule.swiper('.team-relative-news .news-container', {
+          loop: true,
+          prevButton: '.team-relative-news .relative-news-swiper-ctrl .prev-ctrl',
+          nextButton: '.team-relative-news .relative-news-swiper-ctrl .next-ctrl'
+        })
+      }
+      function relativeVideoInit(){
+        webpackModule.swiper('.team-relative-video .video-container .swiper-container', {
+          loop: true,
+          prevButton: '.team-relative-video .relative-video-swiper-ctrl .prev-ctrl',
+          nextButton: '.team-relative-video .relative-video-swiper-ctrl .next-ctrl'
+        })
+      }
+    })

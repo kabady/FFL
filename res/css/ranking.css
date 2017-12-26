@@ -1,0 +1,148 @@
+.ranking-page .ranking-header {
+  margin-top: 20px;
+  font-size: 0;
+  text-align: center;
+}
+
+.ranking-page .ranking-header > a {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #e4e4e4;
+  border: 1px solid #e4e4e4;
+  width: 90px;
+  height: 30px;
+  margin: 10px;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.ranking-page .ranking-header > a.cur-page {
+  color: #022140;
+  background: transparent;
+  border-color: #022140;
+}
+
+.ranking-page .c-table {
+  display: table;
+  width: 100%;
+}
+
+.ranking-page .c-row {
+  display: table-row;
+}
+
+.ranking-page .c-cell {
+  display: table-cell;
+}
+
+.ranking-page .c-row:nth-child(2n + 1) .c-cell {
+  background: #e6e7e9;
+}
+
+.ranking-page .c-header .c-cell {
+  background: #022140 !important;
+}
+
+.ranking-page .team-ranking, .ranking-page .goals-ranking, .ranking-page .assists-ranking {
+  margin: 36px 30px 0;
+  font-size: 14px;
+}
+
+.ranking-page .team-ranking .c-header .c-cell, .ranking-page .goals-ranking .c-header .c-cell, .ranking-page .assists-ranking .c-header .c-cell {
+  color: #fff;
+}
+
+.ranking-page .team-ranking .c-cell, .ranking-page .goals-ranking .c-cell, .ranking-page .assists-ranking .c-cell {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.ranking-page .team-ranking .c-row + .c-row .c-cell, .ranking-page .goals-ranking .c-row + .c-row .c-cell, .ranking-page .assists-ranking .c-row + .c-row .c-cell {
+  border-top: 1px solid transparent;
+  background-clip: content-box;
+}
+
+.ranking-page .team-ranking .ranking-num, .ranking-page .goals-ranking .ranking-num, .ranking-page .assists-ranking .ranking-num {
+  width: 60px;
+}
+
+.ranking-page .team-ranking .ranking-num-1 .ranking-num, .ranking-page .goals-ranking .ranking-num-1 .ranking-num, .ranking-page .assists-ranking .ranking-num-1 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-2 .ranking-num, .ranking-page .goals-ranking .ranking-num-2 .ranking-num, .ranking-page .assists-ranking .ranking-num-2 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-3 .ranking-num, .ranking-page .goals-ranking .ranking-num-3 .ranking-num, .ranking-page .assists-ranking .ranking-num-3 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-4 .ranking-num, .ranking-page .goals-ranking .ranking-num-4 .ranking-num, .ranking-page .assists-ranking .ranking-num-4 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-5 .ranking-num, .ranking-page .goals-ranking .ranking-num-5 .ranking-num, .ranking-page .assists-ranking .ranking-num-5 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-6 .ranking-num, .ranking-page .goals-ranking .ranking-num-6 .ranking-num, .ranking-page .assists-ranking .ranking-num-6 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-7 .ranking-num, .ranking-page .goals-ranking .ranking-num-7 .ranking-num, .ranking-page .assists-ranking .ranking-num-7 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-8 .ranking-num, .ranking-page .goals-ranking .ranking-num-8 .ranking-num, .ranking-page .assists-ranking .ranking-num-8 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-9 .ranking-num, .ranking-page .goals-ranking .ranking-num-9 .ranking-num, .ranking-page .assists-ranking .ranking-num-9 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-10 .ranking-num, .ranking-page .goals-ranking .ranking-num-10 .ranking-num, .ranking-page .assists-ranking .ranking-num-10 .ranking-num {
+  background: #c2c8ce;
+}
+
+.ranking-page .team-ranking .ranking-num-1 .ranking-num, .ranking-page .goals-ranking .ranking-num-1 .ranking-num, .ranking-page .assists-ranking .ranking-num-1 .ranking-num {
+  background: #dfe106;
+}
+
+.ranking-page .team-ranking .ranking-num-2 .ranking-num, .ranking-page .goals-ranking .ranking-num-2 .ranking-num, .ranking-page .assists-ranking .ranking-num-2 .ranking-num {
+  background: #dfe106;
+}
+
+.ranking-page .team-ranking .ranking-num-3 .ranking-num, .ranking-page .goals-ranking .ranking-num-3 .ranking-num, .ranking-page .assists-ranking .ranking-num-3 .ranking-num {
+  background: #dfe106;
+}
+
+.ranking-page .team-ranking .ranking-num-4 .ranking-num, .ranking-page .goals-ranking .ranking-num-4 .ranking-num, .ranking-page .assists-ranking .ranking-num-4 .ranking-num {
+  background: #dfe106;
+}
+
+.ranking-page .goals-assists {
+  font-size: 0;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+
+.ranking-page .goals-assists h3 {
+  font-size: 22px;
+  color: #022140;
+  line-height: 2;
+  margin: 0;
+  font-weight: normal;
+}
+
+.ranking-page .goals-ranking, .ranking-page .assists-ranking {
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 450px;
+}
