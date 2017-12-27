@@ -1,0 +1,91 @@
+.video-page .video-header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-page .video-header .video-type {
+  width: 90px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  background: #e4e4e4;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.video-page .video-header .video-type.cur-type {
+  background: transparent;
+  border: 1px solid #022140;
+  color: #022140;
+}
+
+.video-page .video-list {
+  margin: 36px 20px 0;
+  font-size: 0;
+}
+
+.video-page .video-list .video-item {
+  margin: 0 10px 20px;
+  width: 300px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-page .video-list .video-item .pic {
+  width: 100%;
+  height: 168.75px;
+  position: relative;
+}
+
+.video-page .video-list .video-item .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video-page .video-list .video-item .pic .icon-videoplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 62px;
+  height: 32px;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: -16px;
+  margin-left: -31px;
+}
+
+.video-page .video-list .video-item .pic .icon-videoplay:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #fff;
+  border-right: 0;
+  margin-left: -5px;
+  margin-top: -7px;
+  border-radius: 2px;
+}
+
+.video-page .video-list .video-item .the-title {
+  margin-top: .5em;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 2;
+  color: #000;
+  text-align: center;
+  height: 24px;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 20px;
+  margin-right: 20px;
+}

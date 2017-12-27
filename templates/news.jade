@@ -1,0 +1,35 @@
+extends ./layout.jade
+
+block style
+  link(rel="stylesheet" href="../res/css/news.css")
+
+block content
+  section
+    .section-wrapper
+      .news-page
+        .news-header
+          a.news-type.cur-type(href="#") 所有新闻
+          a.news-type(href="#") 比赛集锦
+          a.news-type(href="#") 人物专访
+          a.news-type(href="#") 场外花絮
+        .news-list
+          - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+          each item in items
+            .news-item
+              .pic
+                img(src="http://iph.href.lu/800x360", alt="")
+              .news-info
+                h6(title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题") #{item}-#{iitem}标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                p 内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+                .tags
+                  a(href="#") 【比赛战报】
+                  a(href="#") 【比赛战报】
+                  a(href="#") 【比赛战报】
+                  a(href="#") 【比赛战报】
+              .news-right
+                a.see-news(href="/html/news-detail.html") 查看详情&nbsp;>
+                .time 2018.09.20
+        .pager
+          //- 这里是分页组件
+              
+        

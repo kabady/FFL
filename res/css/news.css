@@ -1,0 +1,124 @@
+.news-page .news-header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-page .news-header .news-type {
+  width: 90px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  background: #e4e4e4;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.news-page .news-header .news-type.cur-type {
+  background: transparent;
+  border: 1px solid #022140;
+  color: #022140;
+}
+
+.news-page .news-list {
+  margin: 36px 30px 0;
+}
+
+.news-page .news-list .news-item {
+  height: 135px;
+  position: relative;
+  font-size: 0;
+  white-space: normal;
+}
+
+.news-page .news-list .news-item .pic {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.news-page .news-list .news-item .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.news-page .news-list .news-item .news-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+  width: 530px;
+  max-height: 100%;
+}
+
+.news-page .news-list .news-item .news-info h6 {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: normal;
+  color: #000;
+  margin: 0;
+  overflow: hidden;
+  max-height: 2em;
+}
+
+.news-page .news-list .news-item .news-info p {
+  font-size: 12px;
+  margin: 15px 0 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  height: 5.4em;
+  overflow: hidden;
+}
+
+.news-page .news-list .news-item .news-info .tags {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #022140;
+  line-height: 1.8;
+}
+
+.news-page .news-list .news-item .news-info .tags a {
+  display: inline-block;
+  vertical-align: top;
+  color: #022140;
+  text-decoration: none;
+}
+
+.news-page .news-list .news-item .news-info .tags a + a {
+  padding-left: 10px;
+}
+
+.news-page .news-list .news-item .news-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 85px;
+  text-align: right;
+  max-height: 100%;
+}
+
+.news-page .news-list .news-item .news-right .see-news {
+  display: block;
+  font-size: 12px;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #022140;
+  text-decoration: none;
+}
+
+.news-page .news-list .news-item .news-right .time {
+  color: #9a9a9a;
+  font-size: 12px;
+  line-height: 3;
+}
+
+.news-page .news-list .news-item + .news-item {
+  border-top: 1px dotted rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  padding-top: 20px;
+}

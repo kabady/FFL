@@ -1,0 +1,26 @@
+extends ./layout.jade
+
+block style
+  link(rel="stylesheet" href="../res/css/video.css")
+
+block content
+  section
+    .section-wrapper
+      .video-page
+        .video-header
+          a.video-type.cur-type(href="#") 所有视频
+          a.video-type(href="#") 比赛集锦
+          a.video-type(href="#") 人物专访
+          a.video-type(href="#") 场外花絮
+        .video-list
+          - var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+          each item in items
+            .video-item
+              .pic
+                img(src="http://iph.href.lu/800x450", alt="")
+                a(href="/html/video-detail.html")
+                  i.icon-videoplay
+              p.the-title(title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题") 标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+        .pager
+          //- 这里是分页组件
+        
