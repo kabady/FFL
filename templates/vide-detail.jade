@@ -1,0 +1,20 @@
+extends ./layout.jade
+
+block style
+  link(rel="stylesheet" href="../res/css/video-detail.css")
+
+block content
+  section
+    .section-wrapper
+      .video-detail-page
+        .content-nav
+          a(href="/res/home.html") 首页 
+          span &nbsp;>&nbsp;
+          a(href="/res/video.html") 视频
+          span &nbsp;>&nbsp;
+          span.video-name 视频标题
+          .tags
+            .tag-item 比赛寂静
+        h1 视频标题视频标题视频标题视频标题
+        .video-container
+          video(controls="controls", src="", width="800", height="450", poster="http://iph.href.lu/800x450")
